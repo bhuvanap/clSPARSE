@@ -1,6 +1,6 @@
 ﻿# clSPARSE
 clSPARSE is an OpenCL© library implementing Sparse linear algebra. This project is a result of
-a collaboration between [AMD Inc.](http://www.amd.com/) and [Vratis Ltd.](http://www.vratis.com/).
+a collaboration between [AMD Inc.](http://www.amd.com/) and [Vratis Ltd.](http://www.vratis.com/)
 
 ## Introduction to clSPARSE
 
@@ -15,18 +15,15 @@ For the beta release, the clSPARSE library provides the following fundamental op
 -  Functions to read matrix market files in COO or CSR format
 
 Similar to the other clMath libraries, the clSPARSE library exports a “C” interface to allow
-projects to build wrappers around clSPARSE in any programming language.  The API for the 
+projects to build wrappers around clSPARSE using any programming language.  The API for the 
 clSPARSE library is well organized compared to the APIs for the older clMath libraries. 
 The  OpenCL state is not explicitly passed through the API, enabling the library to be 
 forward compatible when users switch from OpenCL 1.2 to OpenCL 2.0. 
 
-The APIs are designed such that users are in control of where input and output
-buffers live, and they maintain control of when data transfers to/from device
-memory happen, so that there are no performance surprises.
 
 The APIs for the clSPARSE library are designed such that the users are in control of the location
 of input and output buffers, and maintain control of when data transfers to/from device
-memory occur, so that to some degree the user can anticipate the performance of the library.
+memory occur, so that the user can to some degree anticipate the performance of the library.
 
 ### API semantic versioning
 
@@ -34,11 +31,11 @@ The clSPARSE API includes the key aspects of good software: the feedback loop, i
 and the software interfaces. clSPARSE follows the [semantic versioning](http://semver.org/) 
 guidelines. The major version number remains '0' -- but the public API must not be considered 
 stable.  clSPARSE is released as beta software (0.y.z) early to the community to elicit feedback 
-and comment so that breaking changes to the API that might require early users to recompile or 
+and comment so that breaking changes to the API that might require initial users to recompile or 
 rewrite portions of their code can be incoorporated early in the design cycle.
 
 
-The pre-built binaries are available on our 
+The **pre-built binaries** are available on our 
 [releases page](https://github.com/clMathLibraries/clSPARSE/releases).
 
 ### Google Groups
@@ -57,7 +54,7 @@ script for clSPARSE builds the samples as an external project, to demonstrate
 how an application finds and links to clSPARSE using cMake.
 
 ### clSPARSE library documentation
-The**API documentation** relevant to this library is not yet available, but the examples in the samples 
+The **API documentation** relevant to this library is not yet available, but the examples in the samples 
 directory provide an excellent starting point to basic library operations.
 
 ### Contributing code
